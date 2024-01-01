@@ -2,4 +2,4 @@
 
 > docker-compose up -d --scale api=3
 
-Now simply run `**curl http://localhost:3000**` few times to see the magic. 
+Now simply run **`curl http://localhost:3000`** few times to see the magic. 
