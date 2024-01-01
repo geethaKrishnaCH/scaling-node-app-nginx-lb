@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  api:
+    build: .
+
+  nginx:
+    image: nginx:1.25.3
+    depends_on:
+      - api
+    volumes:
+      - ./conf.d:/etc/nginx/conf.d
+    ports:
+      - 3000:3000
